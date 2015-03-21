@@ -1,0 +1,37 @@
+Mar 22, 2015 2:07:02 AM org.openqa.grid.selenium.GridLauncher main
+INFO: Launching a standalone server
+02:07:13.616 INFO - Java: Oracle Corporation 24.51-b03
+02:07:13.629 INFO - OS: Linux 3.13.0-27-generic amd64
+02:07:13.663 INFO - v2.21.0, with Core v2.21.0. Built from revision 16552
+02:07:14.137 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+02:07:14.138 INFO - Version Jetty/5.1.x
+02:07:14.148 INFO - Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+02:07:14.149 INFO - Started HttpContext[/selenium-server,/selenium-server]
+02:07:14.150 INFO - Started HttpContext[/,/]
+02:07:14.267 INFO - Started org.openqa.jetty.jetty.servlet.ServletHandler@124ece1d
+02:07:14.267 INFO - Started HttpContext[/wd,/wd]
+02:07:14.292 INFO - Started SocketListener on 0.0.0.0:4444
+02:07:14.292 INFO - Started org.openqa.jetty.jetty.Server@606e8697
+02:07:14.982 INFO - Checking Resource aliases
+02:07:14.989 INFO - Checking Resource aliases
+02:07:14.998 INFO - Command request: getNewBrowserSession[*firefox, http://localhost:8181/dlux/index.html#/login, , addCustomRequestHeaders=true] on session null
+02:07:15.001 INFO - creating new remote session
+02:07:15.106 WARN - Caution: '/usr/bin/firefox': file is a script file, not a real executable.  The browser environment is no longer fully under RC control
+02:07:15.108 INFO - Allocated session c0e9761ee5f04cf8b5044210cd58d362 for http://localhost:8181/dlux/index.html#/login, launching...
+02:07:15.127 WARN - It looks like your baseUrl (http://localhost:8181/dlux/index.html#/login) is pointing to a file, not a directory (it doesn't end with a /).  We're going to have to strip off the last part of the pathname.
+02:07:15.434 INFO - Preparing Firefox profile...
+02:07:21.600 INFO - Launching Firefox...
+02:07:26.324 INFO - Got result: OK,c0e9761ee5f04cf8b5044210cd58d362 on session c0e9761ee5f04cf8b5044210cd58d362
+02:07:26.330 INFO - Command request: setTimeout[5000.0, ] on session c0e9761ee5f04cf8b5044210cd58d362
+02:07:26.353 INFO - Got result: OK on session c0e9761ee5f04cf8b5044210cd58d362
+02:07:26.356 INFO - Command request: open[http://localhost:8181/dlux/index.html#/login, True] on session c0e9761ee5f04cf8b5044210cd58d362
+02:07:26.413 INFO - Couldn't proxy to http://localhost:8181/dlux/index.html because host not listening
+02:07:26.513 INFO - Couldn't proxy to http://localhost:8181/favicon.ico because host not listening
+02:07:26.518 INFO - Got result: OK on session c0e9761ee5f04cf8b5044210cd58d362
+02:07:26.521 INFO - Couldn't proxy to http://localhost:8181/favicon.ico because host not listening
+02:07:26.541 INFO - Command request: windowMaximize[, ] on session c0e9761ee5f04cf8b5044210cd58d362
+02:07:26.561 INFO - Got result: OK on session c0e9761ee5f04cf8b5044210cd58d362
+02:07:29.122 INFO - Started SocketListener on 0.0.0.0:55941
+02:07:29.324 INFO - Started SocketListener on 0.0.0.0:59671
+02:07:29.416 INFO - Couldn't proxy to https://location.services.mozilla.com:443/v1/country?key=no-mozilla-api-key because host not listening
+02:07:29.419 INFO - Couldn't proxy to https://tiles.services.mozilla.com:443/v2/links/fetch/en-IN because host not listening

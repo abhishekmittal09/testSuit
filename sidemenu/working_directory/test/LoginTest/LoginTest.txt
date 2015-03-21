@@ -1,0 +1,21 @@
+*** Settings ***
+Library         Selenium Library
+Resource        LoginKeywords.txt
+Force Tags      FunctionalTest
+Default Tags    ValidTest
+
+*** Testcases ***
+Login Should Succeed When No Username Is Given
+  [Tags]  InvalidTest
+  Enter Username  ${empty}
+  Enter Password  TestPass
+  Click the Login Button
+  Login Is Successful
+
+Login Should Succeed When the Correct Username and Password are Entered
+  Enter Username  AUser
+  Enter Password  TestPass
+  Click the Login Button
+  Login Is Successful
+  
+

@@ -1,0 +1,14 @@
+*** Settings ***
+Library       Selenium Library
+
+*** Testcases ***
+Login Should Succeed When the Correct Username and Password are Entered
+  Start Selenium Server
+  Open Browser  http://localhost:8181/dlux/index.html#/login
+  Maximize Browser Window
+  Input Text  username admim
+  Input Text  password admin
+  Click Button  Login
+  Page Should Contain  Topology
+  Close Browser
+  Stop Selenium Server

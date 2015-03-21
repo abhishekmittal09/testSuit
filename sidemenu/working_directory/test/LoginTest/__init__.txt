@@ -1,0 +1,9 @@
+*** Settings ***
+Library         Selenium Library
+Resource        LoginKeywords.txt
+Suite Setup     Start Selenium Server
+Suite Teardown  Stop Selenium Server
+Test Setup      Login Test Setup
+Test Teardown   Login Test Teardown
+
+

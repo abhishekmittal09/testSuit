@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20150322 03:49:30.729" generator="Robot 2.9.dev20150202 (Python 2.7.6 on linux2)">
+<suite source="/var/www/html/gsoc/dluxtest/sidemenu/working_directory/test/test.txt" id="s1" name="Test">
+<test id="s1-t1" name="Login Should Succeed When the Correct Username and Password are Entered">
+<kw type="kw" name="SeleniumLibrary.Start Selenium Server">
+<doc>Starts the Selenium Server provided with SeleniumLibrary.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20150322 03:49:30.815" level="INFO">Selenium Server started with command "java -jar /usr/local/lib/python2.7/dist-packages/SeleniumLibrary/lib/selenium-server.jar -port 4444 -userExtensions /usr/local/lib/python2.7/dist-packages/SeleniumLibrary/lib/user-extensions.js -firefoxProfileTemplate /usr/local/lib/python2.7/dist-packages/SeleniumLibrary/firefoxprofile"</msg>
+<msg timestamp="20150322 03:49:30.815" html="yes" level="INFO">Selenium server log is written to &lt;a href="file:///var/www/html/gsoc/dluxtest/sidemenu/selenium_server_log.txt"&gt;/var/www/html/gsoc/dluxtest/sidemenu/selenium_server_log.txt&lt;/a&gt;.</msg>
+<status status="PASS" endtime="20150322 03:49:30.816" starttime="20150322 03:49:30.812"></status>
+</kw>
+<kw type="kw" name="SeleniumLibrary.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://localhost:8181/dlux/index.html#/login</arg>
+</arguments>
+<msg timestamp="20150322 03:49:38.186" level="INFO">Opening browser 'firefox' to base url 'http://localhost:8181/dlux/index.html#/login'</msg>
+<status status="PASS" endtime="20150322 03:49:38.186" starttime="20150322 03:49:30.816"></status>
+</kw>
+<kw type="kw" name="SeleniumLibrary.Maximize Browser Window">
+<doc>Maximizes current browser window.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20150322 03:49:38.243" starttime="20150322 03:49:38.187"></status>
+</kw>
+<kw type="kw" name="SeleniumLibrary.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>username admim</arg>
+</arguments>
+<msg timestamp="20150322 03:49:38.244" level="FAIL">Keyword 'SeleniumLibrary.Input Text' expected 2 arguments, got 1.</msg>
+<status status="FAIL" endtime="20150322 03:49:38.244" starttime="20150322 03:49:38.243"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20150322 03:49:38.244" critical="yes" starttime="20150322 03:49:30.811">Keyword 'SeleniumLibrary.Input Text' expected 2 arguments, got 1.</status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20150322 03:49:38.245" starttime="20150322 03:49:30.730"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" pass="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,18 @@
+*** Settings ***
+Library         Selenium Library
+Resource        LoginKeywords.txt
+Test Template   Login Should Fail When
+Force Tags      DataDriven  ValidTest
+
+*** Testcases ***       Username  Password
+The Password is Wrong   AUser     TestFail
+The Password is Empty   AUser     ${empty} 
+Both Fields are Empty   ${empty}  ${empty} 
+
+*** Keywords ***
+Login Should Fail When   [Arguments]  ${username}  ${password}
+  Enter Username  ${username}
+  Enter Password  ${password}
+  Click the Login Button
+  Login Is Unsuccessful
+
